@@ -13,7 +13,7 @@ echo "changing the theme to 'Jonathan'..."
 sed -i 's/^ZSH_THEME=.*$/ZSH_THEME="jonathan"/' ~/.zshrc
 
 echo "updating the plugin list..."
-sed -i 's/^plugins=.*$/plugins="(git colored-man-pages zsh-syntax-highlighting zsh-autosuggestions)"/' ~/.zshrc
+sed -i 's/^plugins=.*$/plugins=(git colored-man-pages zsh-syntax-highlighting zsh-autosuggestions)/' ~/.zshrc
 
 echo "cloning plugins..."
 cd ~/.oh-my-zsh/custom/plugins
